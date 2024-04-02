@@ -2,7 +2,7 @@ import LogoAzul from '../../../public/Fundo.svg'
 
 const HeaderComponents = (): JSX.Element => {
   return (
-    <div className="w-full bg-[var(--quaternary-color)] h-[60px] shadow-xl">
+    <div className="w-screen bg-[var(--quaternary-color)] h-[60px] shadow-xl">
       <div className="w-full">
         <img
           src={LogoAzul}
