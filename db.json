@@ -1,0 +1,88 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "nome": "Giovana L. Arruda",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+
+    {
+      "id": 2,
+      "nome": "Vanessa Machado",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+
+    {
+      "id": 3,
+      "nome": "Juliana Borba",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+
+    {
+      "id": 4,
+      "nome": "Josiane Dias",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+
+    {
+      "id": 5,
+      "nome": "Reginaldo Felipe",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+    {
+      "id": 6,
+      "nome": "Grabriel D.",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+    {
+      "id": 7,
+      "nome": "Silvio  de Carvalho",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+    {
+      "id": 8,
+      "nome": "Ormar A. Amaral",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+    {
+      "id": 9,
+      "nome": "João Pedro Farias",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    },
+    {
+      "id": 10,
+      "nome": "Caroline Rocha da Silva",
+      "foto": "KQ0c@example.com",
+      "cargo": "Front-end",
+      "dataDeAdmissão": "00/00/0000",
+      "Telefone": "+55 (55) 55555-555"
+    }
+  ]
+}
