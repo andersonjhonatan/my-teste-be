@@ -1,12 +1,12 @@
 import { AxiosResponse } from 'axios'
 import { axiosInstance } from '../../axios/axiosInstance'
 import { IUserRepository } from '../Repository/UserRepository'
-import { IUserData } from '../../types/TUser'
+import { IEmployeesData } from '../../types/TUser'
 
 class UserImplemetation implements IUserRepository {
-  async getAllUsers(): Promise<IUserData[]> {
+  async getAllUsers(): Promise<IEmployeesData[]> {
     try {
-      const response: AxiosResponse = await axiosInstance.get('/users')
+      const response: AxiosResponse = await axiosInstance.get('/employees')
       console.log(response)
 
       if (!response) {

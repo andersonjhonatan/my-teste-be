@@ -1,7 +1,8 @@
-export type IUserData = {
-  foto: string
-  nome: string
-  cargo: string
-  datadeadmissão: string
-  telefone: string
+export type IEmployeesData = {
+  id: number
+  name: string
+  job: string
+  admission_date: string
+  phone: string
+  image: string
 }
