@@ -16,3 +16,7 @@
   --tertiary-color-gray-3: #f0f0f0;
   --quaternary-color: #ffffff;
 }
+
+body {
+  background-color: var(--tertiary-color-gray-3);
+}
