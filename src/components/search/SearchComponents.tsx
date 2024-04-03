@@ -1,16 +1,16 @@
 const SearchComponents = () => {
   return (
     <div className="w-full flex items-center justify-between">
-      <h1 className="text-[24px] pt-[44px] pb-[40px]  font-bold leading-[28.13px]">
+      <h4 className="text-[24px] pt-[104px] pb-[40px] leading-[28.13px] font-roboto font-medium text-[var(--secondary-color)]">
         Funcionários
-      </h1>
-      <div className="relative my-8">
+      </h4>
+      <div className="relative mt-[92px] mb-[32px] flex justify-between">
         <input
           type="text"
-          className="w-[287px] py-3 px-4 border-[1px] border-[var(--tertiary-color-gray-2)] rounded-lg"
+          className="w-[287px] h-[48px] py-3 px-4 border-[1px] border-[var(--tertiary-color-gray-2)] rounded-lg placeholder:font-roboto font-normal"
           placeholder="Pesquisar"
         />
-        <img src="Vector.svg" alt="lupa" className="absolute  h-[17.49px] w-[17.49px] top-1/2  transform -translate-y-1/2 right-4" />
+        <img src="Vector.svg" alt="lupa" className="absolute  h-[24px] w-[24px] top-1/2 cursor-pointer transform -translate-y-1/2 right-4" />
       </div>
     </div>
   )

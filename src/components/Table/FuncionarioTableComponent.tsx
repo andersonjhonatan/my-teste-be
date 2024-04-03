@@ -53,30 +53,30 @@ const FuncionarioTableComponent = () => {
       <div className="w-full flex justify-center ">
         <table className="w-full">
           <thead>
-            <tr className="bg-gradient-to-t from-[#594ed2] to-[#5A84C0]  text-[var(--quaternary-color)] text-justify ">
-              <th className="text-base leading-[18.75px] rounded-tl-lg pl-[32px] py-[14px]">
+            <tr className="bg-gradient-to-t from-[var(--primary-color)] to-[var(--quintary-color)]  text-[var(--quaternary-color)] text-justify font-roboto font-medium ">
+              <th className="font-roboto font-medium text-base leading-[18.75px] rounded-tl-lg pl-[32px] h-[47px] py-[14px] ">
                 FOTO
               </th>
-              <th>NOME</th>
-              <th>CARGO</th>
-              <th>DATA DE ADMISSÃO</th>
-              <th className="rounded-tr-lg">TELEFONE</th>
+              <th className='font-roboto font-medium py-[14px] '>NOME</th>
+              <th className='font-roboto font-medium py-[14px] '>CARGO</th>
+              <th className='font-roboto font-medium py-[14px] '>DATA DE ADMISSÃO</th>
+              <th className="rounded-tr-lg font-roboto font-medium py-[14px] ">TELEFONE</th>
             </tr>
           </thead>
           <tbody className="text-justify bg-[var(--quaternary-color)]">
             {users.map((user) => (
               <tr key={user.id} className="text-justify border-b">
-                <td className="pl-[32px]  pt-[8px] pb-[7px] h-[49px]">
+                <td className="pl-[32px] pt-[8px] pb-[7px] h-[49px]">
                   <img
                     src={user.image}
                     alt="user"
-                    className="w-[50px] h-[50px] object-container rounded-full "
+                    className="w-[34px] h-[34px] object-cover rounded-full "
                   />
                 </td>
-                <td>{user.name}</td>
-                <td>{user.job}</td>
-                <td>{dataDeAdmissaoFormatada(user.admission_date)}</td>
-                <td>{phoneFormat(user.phone)}</td>
+                <td className='font-roboto font-normal'>{user.name}</td>
+                <td className='font-roboto font-normal'>{user.job}</td>
+                <td className='font-roboto font-normal'>{dataDeAdmissaoFormatada(user.admission_date)}</td>
+                <td className='font-roboto font-normal'>{phoneFormat(user.phone)}</td>
               </tr>
             ))}
           </tbody>
