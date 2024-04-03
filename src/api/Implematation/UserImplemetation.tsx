@@ -7,7 +7,6 @@ class UserImplemetation implements IUserRepository {
   async getAllUsers(): Promise<IEmployeesData[]> {
     try {
       const response: AxiosResponse = await axiosInstance.get('/employees')
-      console.log(response)
 
       if (!response) {
         throw new Error('Algo deu errado')

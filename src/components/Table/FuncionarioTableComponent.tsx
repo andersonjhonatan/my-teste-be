@@ -1,7 +1,16 @@
-import GetUSers from '../../hooks/UserFetchData'
+import { useContext } from 'react'
+import {
+  dataAdmissaoFormatada,
+  phoneFormat,
+} from '../../utils/formatadores/UserFormatadores'
+import { UserContext } from '../../context/useContext'
+import { UserFilter } from '../../utils/filtragem/UserFilter'
 
 const FuncionarioTableComponent = () => {
-  const { users, dataAdmissaoFormatada, phoneFormat } = GetUSers()
+  const { users, search } = useContext(UserContext)
+
+  const renderfilter = UserFilter(users, search)
+
   return (
     <div className="w-full">
       <div className="w-full flex justify-center ">
@@ -20,7 +29,7 @@ const FuncionarioTableComponent = () => {
             </tr>
           </thead>
           <tbody className="text-justify bg-[var(--quaternary-color)]">
-            {users.map((user) => (
+            {renderfilter.map((user) => (
               <tr key={user.id} className="text-justify border-b">
                 <td className="pl-[32px] pt-[8px] pb-[7px] h-[49px]">
                   <img

@@ -1,4 +1,4 @@
-import LogoAzul from '../../../public/Fundo.svg'
+import LogoAzul from '/Fundo.svg'
 
 const HeaderComponents = (): JSX.Element => {
   return (
