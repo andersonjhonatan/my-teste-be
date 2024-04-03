@@ -64,26 +64,21 @@ const FuncionarioTableComponent = () => {
             </tr>
           </thead>
           <tbody className="text-justify bg-[var(--quaternary-color)]">
-            {users.map(
-              (user) => (
-                console.log(user.phone),
-                (
-                  <tr key={user.id} className="text-justify border-b">
-                    <td className="pl-[32px]  pt-[8px] pb-[7px] h-[49px]">
-                      <img
-                        src={user.image}
-                        alt="user"
-                        className="w-[50px] h-[50px] object-container rounded-full "
-                      />
-                    </td>
-                    <td>{user.name}</td>
-                    <td>{user.job}</td>
-                    <td>{dataDeAdmissaoFormatada(user.admission_date)}</td>
-                    <td>{phoneFormat(user.phone)}</td>
-                  </tr>
-                )
-              )
-            )}
+            {users.map((user) => (
+              <tr key={user.id} className="text-justify border-b">
+                <td className="pl-[32px]  pt-[8px] pb-[7px] h-[49px]">
+                  <img
+                    src={user.image}
+                    alt="user"
+                    className="w-[50px] h-[50px] object-container rounded-full "
+                  />
+                </td>
+                <td>{user.name}</td>
+                <td>{user.job}</td>
+                <td>{dataDeAdmissaoFormatada(user.admission_date)}</td>
+                <td>{phoneFormat(user.phone)}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
