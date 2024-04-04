@@ -23,7 +23,19 @@ Este é um projeto desenvolvido como parte de um teste, visando criar uma tabela
    ```bash
    git clone git@github.com:andersonjhonatan/my-teste-be.git
 
-   
+2. Instale as dependências:
+   ```bash
+   yarn install
+
+3. Inicie o servidor JSON para simular a API:
+ ```bash
+   npx json-server db.json
+
+4. Inicie o projeto:
+ ```bash
+   npm run dev
+
+  
 ### Contribuindo
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou propor novas funcionalidades. Pull requests também são aceitos.
 
