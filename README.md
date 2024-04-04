@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tabela de Funcionários
 
-Currently, two official plugins are available:
+Este é um projeto desenvolvido como parte de um teste, visando criar uma tabela de funcionários em duas versões: mobile e web. A tabela exibe dados de funcionários e permite a interação básica com eles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **Tailwind CSS**: Framework CSS utilizado para estilização rápida e responsiva.
+- **Axios**: Biblioteca para fazer requisições HTTP.
+- **TypeScript**: Linguagem de programação que adiciona tipagem estática opcional ao JavaScript.
+- **Vite**: Um construtor de aplicativos web rápido e leve que utiliza tecnologias modernas como ES Modules.
+- **JSON Server**: Simula uma API REST com um arquivo JSON para facilitar o desenvolvimento e teste.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalação e Uso
 
-- Configure the top-level `parserOptions` property like this:
+### Pré-requisitos
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Node.js e yarn instalados globalmente na sua máquina.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Passos para Instalação
+
+1. Clone este repositório:
+   ```bash
+   git clone git@github.com:andersonjhonatan/my-teste-be.git
+
+   
+### Contribuindo
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou propor novas funcionalidades. Pull requests também são aceitos.
+
+### Licença
+Este projeto está sob a licença MIT.
