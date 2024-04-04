@@ -17,6 +17,8 @@ interface UserContextType {
   setUsers: Dispatch<SetStateAction<IEmployeesData[]>>
   HandleOnSubmit: FormEventHandler<HTMLFormElement>
   HandleChange: ChangeEventHandler<HTMLInputElement>
+  openModal: () => void
+  open: boolean
 }
 
 const initialUserContext: UserContextType = {
@@ -25,12 +27,15 @@ const initialUserContext: UserContextType = {
   HandleOnSubmit: () => {},
   HandleChange: () => {},
   search: '',
+  openModal: () => {},
+  open: false,
 }
 
 export const UserContext = createContext<UserContextType>(initialUserContext)
 
 export const UserProvider = ({ children }: { children: React.ReactNode }) => {
   const [users, setUsers] = useState<IEmployeesData[]>([])
+  const [open, setOpen] = useState<boolean>(false)
   const [search, setSearch] = useState<string>('')
 
   useEffect(() => {
@@ -52,9 +57,13 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     setSearch(value)
   }
 
+  const openModal = () => {
+    setOpen(!open)
+  }
+
   return (
     <UserContext.Provider
-      value={{ users, setUsers, HandleOnSubmit, HandleChange, search }}
+      value={{ users, setUsers, HandleOnSubmit, HandleChange, search, openModal, open }}
     >
       {children}
     </UserContext.Provider>

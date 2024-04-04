@@ -5,7 +5,7 @@ import {
 } from '../../utils/formatadores/UserFormatadores'
 import { UserContext } from '../../context/useContext'
 import { UserFilter } from '../../utils/filtragem/UserFilter'
-import TableMobileComponent from '../tableMobile/TableMobileComponent'
+import TableMobileComponent from '../mobile/tableMobile/TableMobileComponent'
 
 const TableWebComponent = () => {
   const { users, search } = useContext(UserContext)
@@ -16,7 +16,7 @@ const TableWebComponent = () => {
     <div className="w-full">
       <div className="w-full flex justify-center max-sm:hidden">
         <table className="w-full">
-          <thead className=''>
+          <thead>
             <tr className="bg-gradient-to-t from-[var(--primary-color)] to-[var(--quintary-color)]  text-[var(--quaternary-color)] text-justify font-roboto font-medium">
               <th className="font-roboto font-medium text-base leading-[18.75px] rounded-tl-lg pl-[32px] h-[47px] py-[14px] ">
                 FOTO
