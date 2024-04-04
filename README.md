@@ -11,6 +11,9 @@ Este é um projeto desenvolvido como parte de um teste, visando criar uma tabela
 - **Vite**: Um construtor de aplicativos web rápido e leve que utiliza tecnologias modernas como ES Modules.
 - **JSON Server**: Simula uma API REST com um arquivo JSON para facilitar o desenvolvimento e teste.
 
+![Web](./public/exemplo.png](https://github.com/andersonjhonatan/my-teste-be/blob/main/src/assets/printsProject/web.png))
+
+
 ## Instalação e Uso
 
 ### Pré-requisitos
