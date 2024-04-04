@@ -28,14 +28,13 @@ Este é um projeto desenvolvido como parte de um teste, visando criar uma tabela
    yarn install
 
 3. Inicie o servidor JSON para simular a API:
- ```bash
+   ```bash
    npx json-server db.json
 
 4. Inicie o projeto:
- ```bash
+   ```bash
    npm run dev
 
-  
 ### Contribuindo
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou propor novas funcionalidades. Pull requests também são aceitos.
 
