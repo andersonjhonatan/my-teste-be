@@ -35,6 +35,7 @@ Este é um projeto desenvolvido como parte de um teste, visando criar uma tabela
    ```bash
    npm run dev
 
+
 ### Contribuindo
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou propor novas funcionalidades. Pull requests também são aceitos.
 
