@@ -14,7 +14,7 @@ const TableMobileComponent = () => {
         <table className="w-full">
           <thead>
             <tr className="bg-gradient-to-t from-[var(--primary-color)] to-[var(--quintary-color)]  text-[var(--quaternary-color)] text-justify font-roboto font-medium rounded-tr-lg">
-              <th className="font-roboto font-medium text-base leading-[18.75px] rounded-tl-lg pl-[32px] h-[47px] py-[14px] ">
+              <th className="font-roboto font-medium text-base leading-[18.75px] rounded-tl-lg pl-[15.5px] h-[47px] py-[14px] ">
                 FOTO
               </th>
               <th className="font-roboto font-medium  py-[14px] ">NOME</th>
