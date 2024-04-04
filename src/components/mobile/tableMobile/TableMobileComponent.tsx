@@ -1,16 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { UserContext } from '../../../context/useContext'
 import { UserFilter } from '../../../utils/filtragem/UserFilter'
 import ModalTable from '../modalTable/ModalTable'
 
 const TableMobileComponent = () => {
-  const { users, search } = useContext(UserContext)
-
-  const [selectedUserId, setSelectedUserId] = useState<number | null>(null)
-
-  const handleOpenModal = (userId: number | null) => {
-    setSelectedUserId(userId)
-  }
+  const { users, search, handleOpenModal, selectedUserId } = useContext(UserContext)
 
   const renderfilter = UserFilter(users, search)
 
