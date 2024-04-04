@@ -1,4 +1,4 @@
-import { IUserData } from '../../types/TUser'
+import { IEmployeesData } from '../../types/TUser'
 import UserImplemetation from '../Implematation/UserImplemetation'
 
 class UserService {
@@ -7,7 +7,7 @@ class UserService {
   constructor(userImplemation: UserImplemetation) {
     this.userImplemation = userImplemation
   }
-  async getAllUsers(): Promise<IUserData[]> {
+  async getAllUsers(): Promise<IEmployeesData[]> {
     try {
       return await this.userImplemation.getAllUsers()
     } catch (error) {

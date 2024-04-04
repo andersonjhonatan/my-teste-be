@@ -1,5 +1,5 @@
-import { IUserData } from '../../types/TUser'
+import { IEmployeesData } from '../../types/TUser'
 
 export interface IUserRepository {
-  getAllUsers: () => Promise<IUserData[]>
+  getAllUsers: () => Promise<IEmployeesData[]>
 }
