@@ -1,13 +1,12 @@
-import FuncionarioTableComponent from '../Table/FuncionarioTableComponent'
+import TableWebComponent from '../Table/TableWebComponent'
 import SearchComponents from '../search/SearchComponents'
 
 const MainComponent = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-[calc(100vh-60px)]  pl-8 pr-[35px] flex flex-col ">
+      <div className="w-full h-[calc(100vh-60px)] px-[32px] max-sm:px-[20px] flex flex-col ">
         <SearchComponents />
-
-        <FuncionarioTableComponent />
+        <TableWebComponent />
       </div>
     </div>
   )

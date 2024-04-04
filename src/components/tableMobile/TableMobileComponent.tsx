@@ -11,14 +11,14 @@ const TableMobileComponent = () => {
     <div className="w-full sm:hidden">
       <div className="w-full flex justify-center ">
         <table className="w-full">
-          <thead>
-            <tr className="bg-gradient-to-t from-[var(--primary-color)] to-[var(--quintary-color)]  text-[var(--quaternary-color)] text-justify font-roboto font-medium ">
+          <thead >
+            <tr className="bg-gradient-to-t from-[var(--primary-color)] to-[var(--quintary-color)]  text-[var(--quaternary-color)] text-justify font-roboto font-medium rounded-tr-lg">
               <th className="font-roboto font-medium text-base leading-[18.75px] rounded-tl-lg pl-[32px] h-[47px] py-[14px] ">
                 FOTO
               </th>
               <th className="font-roboto font-medium py-[14px] ">NOME</th>
-              <th className="rounded-tr-lg font-roboto font-medium h-[52px] text-6xl sm:hidden flex justify-around items-center border">
-                <img src="Ellipse.svg" alt="elipse" />
+              <th className="rounded-tr-lg font-roboto font-medium  sm:hidden">
+                <img src="Ellipse.svg" alt="elipse" className='pl-[0.6rem]' />
               </th>
             </tr>
           </thead>
@@ -32,7 +32,7 @@ const TableMobileComponent = () => {
                     className="w-[34px] h-[34px] object-cover rounded-full "
                   />
                 </td>
-                <td className="font-roboto font-normal">{user.name}</td>
+                <td className="font-roboto font-normal text-base">{user.name}</td>
 
                 <td className="sm:hidden">
                   <img src="arrowDown.svg" alt="arrow-Down" />
