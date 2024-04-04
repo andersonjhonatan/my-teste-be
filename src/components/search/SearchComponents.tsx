@@ -4,15 +4,15 @@ import { UserContext } from '../../context/useContext'
 const SearchComponents = () => {
   const { search, HandleOnSubmit, HandleChange } = useContext(UserContext)
   return (
-    <div className="w-full flex items-center justify-between">
-      <h4 className="text-[24px] pt-[104px] pb-[40px] leading-[28.13px] font-roboto font-medium text-[var(--secondary-color)]">
+    <div className="w-full fle max-sm:flex-col items-center justify-between">
+      <h4 className="text-[24px] pt-[104px] max-sm:pt-[80px] pb-[40px] max-sm:pb-0 leading-[28.13px] font-roboto font-medium text-[var(--secondary-color)]">
         Funcionários
       </h4>
-      <form onSubmit={HandleOnSubmit}>
-        <div className="relative mt-[92px] mb-[32px] flex justify-between">
+      <form onSubmit={HandleOnSubmit} className="w-full">
+        <div className="relative mt-[92px] max-sm:mt-[28px] mb-[32px] max-sm:mb-[20px] flex justify-between">
           <input
             type="text"
-            className="w-[287px] h-[48px] py-3 px-4 border-[1px] border-[var(--tertiary-color-gray-2)] rounded-lg placeholder:font-roboto font-normal"
+            className="w-[287px] max-sm:w-full h-[48px] py-3 px-4 border-[1px] border-[var(--tertiary-color-gray-2)] rounded-lg placeholder:font-roboto font-normal"
             placeholder="Pesquisar"
             value={search || ''}
             onChange={HandleChange}

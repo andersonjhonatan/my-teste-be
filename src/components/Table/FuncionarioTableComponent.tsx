@@ -5,6 +5,7 @@ import {
 } from '../../utils/formatadores/UserFormatadores'
 import { UserContext } from '../../context/useContext'
 import { UserFilter } from '../../utils/filtragem/UserFilter'
+import TableMobileComponent from '../tableMobile/TableMobileComponent'
 
 const FuncionarioTableComponent = () => {
   const { users, search } = useContext(UserContext)
@@ -13,7 +14,7 @@ const FuncionarioTableComponent = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full flex justify-center ">
+      <div className="w-full flex justify-center max-sm:hidden">
         <table className="w-full">
           <thead>
             <tr className="bg-gradient-to-t from-[var(--primary-color)] to-[var(--quintary-color)]  text-[var(--quaternary-color)] text-justify font-roboto font-medium ">
@@ -47,8 +48,30 @@ const FuncionarioTableComponent = () => {
               </tr>
             ))}
           </tbody>
+          {/* Versao Mobile */}
+          <tbody className="text-justify bg-[var(--quaternary-color)] hidden">
+            {renderfilter.map((user) => (
+              <tr key={user.id} className="text-justify border-b">
+                <td className="pl-[32px] pt-[8px] pb-[7px] h-[49px]">
+                  <img
+                    src={user.image}
+                    alt="user"
+                    className="w-[34px] h-[34px] object-cover rounded-full "
+                  />
+                </td>
+                <td className="font-roboto font-normal">{user.name}</td>
+                <td className="font-roboto font-normal">{user.job}</td>
+                <td className="font-roboto font-normal">
+                  {dataAdmissaoFormatada(user.admission_date)}
+                </td>
+                <td className="font-roboto font-normal">{phoneFormat(user.phone)}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
+
+      <TableMobileComponent />
     </div>
   )
 }
