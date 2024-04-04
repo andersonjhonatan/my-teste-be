@@ -39,4 +39,4 @@ Este é um projeto desenvolvido como parte de um teste, visando criar uma tabela
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou propor novas funcionalidades. Pull requests também são aceitos.
 
 ### Licença
-Este projeto está sob a licença MIT.
+Este projeto está sob a licença Anderson Jhonatan.
