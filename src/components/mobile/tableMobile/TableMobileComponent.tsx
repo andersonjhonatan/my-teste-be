@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { Fragment, useContext } from 'react'
 import { UserContext } from '../../../context/useContext'
 import { UserFilter } from '../../../utils/filtragem/UserFilter'
 import ModalTable from '../modalTable/ModalTable'
@@ -25,7 +25,7 @@ const TableMobileComponent = () => {
           </thead>
           <tbody className="text-justify bg-[var(--quaternary-color)]">
             {renderfilter.map((user) => (
-              <React.Fragment key={user.id}>
+              <Fragment key={user.id}>
                 <tr key={user.id} className="text-justify border-b">
                   <td className="pl-[32px] pt-[8px] pb-[7px] h-[49px]">
                     <img
@@ -60,7 +60,7 @@ const TableMobileComponent = () => {
                     </td>
                   </tr>
                 )}
-              </React.Fragment>
+              </Fragment>
             ))}
           </tbody>
         </table>
