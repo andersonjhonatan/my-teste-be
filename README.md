@@ -10,11 +10,7 @@ Este é um projeto desenvolvido como parte de um teste, visando criar uma tabela
 - **TypeScript**: Linguagem de programação que adiciona tipagem estática opcional ao JavaScript.
 - **Vite**: Um construtor de aplicativos web rápido e leve que utiliza tecnologias modernas como ES Modules.
 - **JSON Server**: Simula uma API REST com um arquivo JSON para facilitar o desenvolvimento e teste.
-
-![web](https://raw.githubusercontent.com/andersonjhonatan/my-teste-be/main/src/assets/printsProject/web.png)
-
-
-
+  
 ## Instalação e Uso
 
 ### Pré-requisitos
